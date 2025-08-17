@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Store Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .search-bar {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .search-bar input {
+      width: 60%;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    /* Cards */
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 10px;
+    }
+    .card .image {
+      background: #f1f1f1;
+      height: 120px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #888;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #666;
+    }
+    .rating {
+      color: goldenrod;
+      font-size: 14px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    @media (min-width: 769px) {
+      .hamburger {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">S</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-links">
+      <a href="#">Near by Me</a>
+      <a href="#">Offers</a>
+      <a href="#">About</a>
+      <a href="#">Sign in</a>
+    </div>
+    <div class="hamburger">☰</div>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container">
+    <div class="card">
+      <div class="image">Image</div>
+      <h3>ShopName</h3>
+      <p>StoreType</p>
+      <p>Location</p>
+      <p class="rating">⭐ 5.0 (reviews)</p>
+    </div>
+
+    <div class="card">
+      <div class="image">☕</div>
+      <h3>CoffeKing</h3>
+      <p>Coffee</p>
+      <p>MGR Nagar, Chennai</p>
+      <p class="rating">⭐ 4.0 (58)</p>
+    </div>
+
+    <!-- More cards -->
+    <div class="card"><div class="image"></div></div>
+    <div class="card"><div class="image"></div></div>
+    <div class="card"><div class="image"></div></div>
+  </div>
+
+</body>
+</html>
