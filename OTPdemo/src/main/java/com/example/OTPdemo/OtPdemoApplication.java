@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class OtPdemoApplication {
 
-	private final static String Account_SID="AC5f5b8c65b4fcffc982d2fe54c489817e";
-	private final static String Auth_ID="56de4ccb735118ad6e4e8fe1cbce8894";
+	private final static String Account_SID="";
+	private final static String Auth_ID="";
 
 	static {
 		Twilio.init(Account_SID,Auth_ID);
