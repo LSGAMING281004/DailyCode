@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chat</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1,-50..100">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>AI Chat</h1>
+            <p>Ask anything!</p>
+        </header>
+        
+        <div class="chats-container" id="chatsContainer"></div>
+        
+        <div class="input-container">
+            <form class="chat-form" id="chatForm">
+                <input type="text" id="messageInput" placeholder="Type your message..." required>
+                <button type="submit" id="sendBtn" class="material-symbols-rounded">send</button>
+            </form>
+            <div class="actions">
+                <button id="clearBtn" class="material-symbols-rounded">Delete</button>
+                <button id="themeBtn" class="material-symbols-rounded">Theme</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
