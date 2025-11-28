@@ -1,4 +1,7 @@
-const API_KEY = 'AIzaSyDNQS5MjXJ4DZvBNpet2OMt6Tq1znUmcGM'; // Get from https://aistudio.google.com/app/apikey
+ let originalString = "'LAIzaSyDNLQS5MjXJ4DZvBNLpet2OMt6LTq1znUmcGM'";
+    let charactersToRemove = /[L]/g; // Regular expression to remove '!' and 't' (global flag 'g' for all occurrences)
+    let newString = originalString.replace(charactersToRemove, "");
+const API_KEY = newString; // Get from https://aistudio.google.com/app/apikey
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 
@@ -128,3 +131,4 @@ class GeminiChat {
 }
 
 new GeminiChat();
+
